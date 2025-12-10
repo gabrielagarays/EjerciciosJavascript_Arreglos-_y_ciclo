@@ -1,0 +1,148 @@
+/* ------------------------------- */
+/*           TIPOGRAFÍA            */
+/* ------------------------------- */
+@font-face {
+    font-family: "Geolica";
+    src: url("fonts/Geologica-VariableFont_CRSV,SHRP,slnt,wght.ttf") format("opentype");
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Geolica";
+    src: url("fonts/Geologica-VariableFont_CRSV,SHRP,slnt,wght.ttf") format("opentype");
+    font-weight: bold;
+}
+
+/* ------------------------------- */
+/*             GLOBAL              */
+/* ------------------------------- */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Geolica", sans-serif;
+    color: white;
+
+    background-image: url("../img/background-space.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Contenedor centrado */
+main {
+    max-width: 900px;
+    margin: 0 auto; /* 🔥 CENTRA TODO */
+}
+
+/* ------------------------------- */
+/*            BRAND NAME           */
+/* ------------------------------- */
+.brand-name {
+    position: absolute;
+    top: 30px;
+    left: 50px;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    color: #efe4e4;
+}
+
+/* ------------------------------- */
+/*              HEADER             */
+/* ------------------------------- */
+
+.header {
+    text-align: center;
+    margin-top: 120px;
+    margin-bottom: 80px;
+}
+
+.header h1 {
+    font-size: 80px;
+    margin: 0;
+    font-weight: 700;
+}
+
+.header h2 {
+    font-size: 40px;
+    margin-top: -5px;
+    font-weight: 300;
+}
+
+/* ------------------------------- */
+/*        BOTONES (GRID)           */
+/* ------------------------------- */
+
+.buttons-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    justify-items: center; /* 🔥 CENTRA LOS BOTONES */
+}
+
+/* ------------------------------- */
+/*         BOTONES SOFT UI         */
+/* ------------------------------- */
+
+.btn {
+    width: 100%;
+    max-width: 350px;
+    height: 150px;
+
+    border-radius: 100px;
+    border: none;
+    color: black;
+    padding: 0 40px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    text-align: left;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: 800;
+
+    /* Soft UI sombras */
+    box-shadow:
+        6px 6px 12px rgba(0, 0, 0, 0.25),
+        -6px -6px 12px rgba(255, 255, 255, 0.15);
+
+    transition: all 0.25s ease;
+}
+
+.btn:hover {
+    transform: translateY(-4px);
+    box-shadow:
+        8px 8px 16px rgba(0, 0, 0, 0.26),
+        -8px -8px 16px rgba(255, 255, 255, 0.18);
+}
+
+.btn:active {
+    transform: translateY(2px);
+    box-shadow:
+        inset 4px 4px 8px rgba(0, 0, 0, 0.28),
+        inset -4px -4px 8px rgba(255, 255, 255, 0.15);
+}
+
+/* Texto adentro del botón */
+.btn .num {
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.btn .desc {
+    font-size: 18px;
+    margin-top: -4px;
+}
+
+/* ------------------------------- */
+/*          COLORES BOTONES        */
+/* ------------------------------- */
+
+.yellow { background-color: #FFC42C; }
+.green { background-color: #28C76F; }
+.pink { background-color: #F7A6C8; }
+.purple { background-color: #8E7CEB; }
+.orange { background-color: #FF623D; }
+.darkpurple { background-color: #5C46E5; }
